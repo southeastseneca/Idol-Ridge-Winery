@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Idol Ridge Winery & Alder Creek Distillery | Lodi, NY – South East Seneca</title>
+  <meta name="description" content="Idol Ridge Winery & Alder Creek Distillery in Lodi, NY — a lodge-style tasting room perched on a ridge with panoramic Seneca Lake views. 20+ award-winning wines, premium spirits, homemade fudge, live music Sundays, pet-friendly, and private Airbnb cabins." />
+  <meta name="keywords" content="Idol Ridge Winery, Alder Creek Distillery, Lodi NY winery, Seneca Lake wine, Finger Lakes winery, Martin family winery, sparkling wine, South East Seneca" />
+  <meta property="og:title" content="Idol Ridge Winery & Alder Creek Distillery | Lodi, NY" />
+  <meta property="og:description" content="Lodge-style tasting room perched on a ridge with panoramic Seneca Lake views. 20+ wines, Alder Creek spirits, homemade fudge, live music Sundays, and private Airbnb cabins." />
+  <meta property="og:image" content="https://raw.githubusercontent.com/southeastseneca/Idol-Ridge-Listing/main/Hero.jpeg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Epilogue:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--navy:#323d41;--amber:#eeaf70;--slate:#4e6d77;--mauve:#b37565;--white:#ffffff;--cream:#f7f4f0;--ink:#1e2729;--muted:#6b7c80;--border:#dde4e6;--font-head:'Oswald',sans-serif;--font-body:'Epilogue',sans-serif;--max-width:1100px;}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:var(--font-body);background:var(--cream);color:var(--ink);line-height:1.7;font-weight:400;}
+    .ses-icon{display:inline-flex;align-items:center;justify-content:center;background:var(--amber);border-radius:50%;flex-shrink:0;}
+    .ses-icon svg{display:block;} .ses-icon-sm{width:28px;height:28px;} .ses-icon-sm svg{width:15px;height:15px;} .ses-icon-md{width:38px;height:38px;} .ses-icon-md svg{width:20px;height:20px;}
+    .hero{position:relative;height:560px;background:var(--navy) center/cover no-repeat;background-image:url('Hero.jpeg');background-position:center 50%;display:flex;align-items:flex-end;}
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(50,61,65,0.92) 0%,rgba(50,61,65,0.2) 55%,transparent 100%);}
+    .hero-content{position:relative;z-index:1;max-width:var(--max-width);margin:0 auto;padding:0 2rem 2.75rem;width:100%;}
+    .category-tag{display:inline-flex;align-items:center;gap:0.5rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-size:0.7rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;padding:0.3rem 0.85rem 0.3rem 0.5rem;border-radius:2px;margin-bottom:0.65rem;}
+    .category-tag .ses-icon{width:22px;height:22px;background:rgba(50,61,65,0.15);} .category-tag .ses-icon svg{width:12px;height:12px;}
+    .hero h1{font-family:var(--font-head);font-size:clamp(2rem,5vw,3.2rem);font-weight:700;color:var(--white);line-height:1.05;letter-spacing:0.02em;text-transform:uppercase;}
+    .hero-tagline{color:rgba(255,255,255,0.82);font-size:1rem;font-weight:300;font-style:italic;margin-top:0.45rem;}
+    .quick-bar{background:var(--navy);border-top:3px solid var(--amber);}
+    .quick-bar-inner{max-width:var(--max-width);margin:0 auto;padding:0 2rem;display:flex;flex-wrap:wrap;}
+    .quick-item{display:flex;align-items:center;gap:0.6rem;padding:0.9rem 1.5rem 0.9rem 0;margin-right:1.5rem;font-size:0.85rem;color:rgba(255,255,255,0.9);border-right:1px solid rgba(255,255,255,0.12);}
+    .quick-item:last-child{border-right:none;} .quick-item strong{font-weight:600;color:var(--white);}
+    .main-wrapper{max-width:var(--max-width);margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start;}
+    section{margin-bottom:2.75rem;}
+    .section-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--slate);margin-bottom:0.35rem;display:flex;align-items:center;gap:0.4rem;}
+    .section-label::after{content:'';display:inline-block;width:24px;height:1px;background:var(--slate);opacity:0.5;}
+    .section-title{font-family:var(--font-head);font-size:1.75rem;font-weight:600;color:var(--navy);margin-bottom:0.85rem;letter-spacing:0.02em;text-transform:uppercase;border-bottom:2px solid var(--amber);padding-bottom:0.5rem;display:inline-block;}
+    p{margin-bottom:1rem;color:#3a4f54;font-size:0.95rem;}
+    .story-section{background:var(--navy);border-radius:8px;padding:2rem 2.25rem;margin-bottom:2.75rem;position:relative;overflow:hidden;}
+    .story-section::before{content:'\201C';position:absolute;top:0.5rem;right:1.5rem;font-size:7rem;color:rgba(238,175,112,0.1);line-height:1;font-family:Georgia,serif;pointer-events:none;}
+    .story-label{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--amber);margin-bottom:0.5rem;display:flex;align-items:center;gap:0.6rem;}
+    .story-title{font-family:var(--font-head);font-size:1.4rem;font-weight:600;color:var(--white);text-transform:uppercase;letter-spacing:0.03em;margin-bottom:1.1rem;}
+    .story-body{font-size:0.97rem;font-style:italic;font-weight:300;line-height:1.85;border-left:3px solid var(--amber);padding-left:1.25rem;}
+    .story-body p{color:rgba(255,255,255,0.82);margin-bottom:0.85rem;} .story-body p:last-child{margin-bottom:0;}
+    .story-attribution{margin-top:1.1rem;padding-top:0.85rem;border-top:1px solid rgba(255,255,255,0.1);font-size:0.82rem;color:var(--amber);font-weight:500;font-style:normal;display:flex;align-items:center;gap:0.6rem;}
+    .highlights{display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:1rem;margin-top:0.85rem;}
+    .highlight-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);padding:1.1rem 1.15rem;border-radius:4px;}
+    .highlight-card h4{font-family:var(--font-head);font-size:0.88rem;font-weight:600;text-transform:uppercase;letter-spacing:0.04em;margin:0.65rem 0 0.3rem;color:var(--navy);}
+    .highlight-card p{font-size:0.82rem;color:var(--muted);margin:0;}
+    .wine-list{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-top:0.75rem;}
+    .wine-list li{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--slate);padding:0.7rem 1rem;border-radius:3px;font-size:0.88rem;}
+    .wine-list li strong{display:block;color:var(--navy);font-family:var(--font-head);letter-spacing:0.03em;font-size:0.92rem;margin-bottom:0.1rem;}
+    .wine-list li span{color:var(--muted);font-size:0.8rem;}
+    .note-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(238,175,112,0.12);border:1px solid rgba(238,175,112,0.4);color:#7a5a30;font-size:0.78rem;padding:0.35rem 0.7rem;border-radius:3px;margin-top:0.75rem;}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:0.5rem;margin-top:0.75rem;}
+    .gallery-item{overflow:hidden;border-radius:4px;}
+    .gallery-item img{width:100%;height:165px;object-fit:cover;display:block;transition:transform 0.3s ease;}
+    .gallery-item:hover img{transform:scale(1.04);}
+    .gallery-note{font-size:0.8rem;color:var(--muted);margin-top:0.5rem;font-style:italic;display:flex;align-items:center;gap:0.4rem;}
+    .tips-list{list-style:none;margin-top:0.75rem;}
+    .tips-list li{display:flex;gap:0.75rem;margin-bottom:0.7rem;font-size:0.92rem;color:#3a4f54;align-items:flex-start;}
+    .sidebar{position:sticky;top:2rem;}
+    .sidebar-card{background:var(--white);border:1px solid var(--border);border-radius:6px;overflow:hidden;margin-bottom:1.5rem;box-shadow:0 1px 4px rgba(50,61,65,0.07);}
+    .sidebar-card-header{background:var(--navy);color:var(--white);padding:0.75rem 1.15rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;display:flex;align-items:center;gap:0.6rem;}
+    .sidebar-card-body{padding:1.15rem;}
+    .info-row{display:flex;gap:0.65rem;margin-bottom:0.9rem;font-size:0.88rem;align-items:flex-start;} .info-row:last-child{margin-bottom:0;}
+    .info-row .label{font-family:var(--font-head);font-weight:600;display:block;font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.15rem;}
+    .info-row a{color:var(--slate);text-decoration:none;font-weight:500;} .info-row a:hover{color:var(--navy);text-decoration:underline;}
+    .divider{border:none;border-top:1px solid var(--border);margin:1rem 0;}
+    .hours-sub-head{font-family:var(--font-head);font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin:0.85rem 0 0.4rem;display:block;}
+    .hours-table{width:100%;font-size:0.83rem;border-collapse:collapse;}
+    .hours-table tr td{padding:0.3rem 0;} .hours-table tr td:first-child{color:var(--muted);}
+    .hours-table tr td:last-child{text-align:right;font-weight:600;color:var(--navy);}
+    .cta-btn{display:flex;align-items:center;justify-content:center;gap:0.6rem;background:var(--amber);color:var(--navy);font-family:var(--font-head);font-weight:700;font-size:0.82rem;letter-spacing:0.1em;text-transform:uppercase;padding:0.8rem 1rem;border-radius:4px;text-decoration:none;margin-top:1rem;transition:background 0.2s,transform 0.1s;}
+    .cta-btn:hover{background:#e09e58;transform:translateY(-1px);}
+    .social-links{display:flex;gap:0.5rem;margin-top:0.75rem;}
+    .social-links a{flex:1;text-align:center;background:var(--cream);border:1px solid var(--border);border-radius:4px;padding:0.5rem;font-family:var(--font-head);font-size:0.72rem;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;color:var(--navy);text-decoration:none;display:flex;align-items:center;justify-content:center;gap:0.4rem;transition:background 0.15s;}
+    .social-links a:hover{background:var(--border);}
+    .map-wrap iframe{width:100%;height:185px;border:none;display:block;}
+    .map-note{padding:0.7rem 1.15rem;font-size:0.8rem;color:var(--muted);display:flex;align-items:center;gap:0.5rem;}
+    .nearby-item{display:flex;gap:0.75rem;margin-bottom:0.8rem;align-items:flex-start;} .nearby-item:last-child{margin-bottom:0;}
+    .nearby-item strong{display:block;font-size:0.88rem;color:var(--navy);font-weight:600;} .nearby-item span{font-size:0.78rem;color:var(--muted);}
+    .events-strip{background:var(--navy);color:var(--white);margin-top:2rem;}
+    .events-inner{max-width:var(--max-width);margin:0 auto;padding:2.5rem 2rem;}
+    .events-inner .section-label{color:var(--amber);} .events-inner .section-label::after{background:var(--amber);}
+    .events-inner .section-title{color:var(--white);border-bottom-color:var(--amber);}
+    .events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1rem;margin-top:1.1rem;}
+    .event-card{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-top:2px solid var(--amber);border-radius:5px;padding:1.1rem 1.2rem;}
+    .event-date{font-family:var(--font-head);font-size:0.68rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--amber);margin-bottom:0.35rem;display:flex;align-items:center;gap:0.45rem;}
+    .event-card h4{font-family:var(--font-head);font-size:0.95rem;font-weight:600;text-transform:uppercase;letter-spacing:0.03em;margin-bottom:0.4rem;color:var(--white);}
+    .event-card p{font-size:0.82rem;color:rgba(255,255,255,0.62);margin:0;line-height:1.55;}
+    .event-recurring{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.68rem;background:rgba(238,175,112,0.18);color:var(--amber);border-radius:2px;padding:0.18rem 0.5rem;margin-top:0.5rem;font-family:var(--font-head);letter-spacing:0.08em;text-transform:uppercase;}
+    .events-more{font-size:0.82rem;color:rgba(255,255,255,0.45);margin-top:1.25rem;display:flex;align-items:center;gap:0.45rem;}
+    .events-more a{color:var(--amber);text-decoration:none;}
+    .keep-exploring{background:var(--cream);padding:3rem 2rem;border-top:3px solid var(--amber);}
+    .keep-exploring-inner{max-width:var(--max-width);margin:0 auto;}
+    .keep-exploring-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.25rem;margin-top:1.5rem;}
+    .ke-card{background:var(--white);border:1px solid var(--border);border-top:3px solid var(--amber);border-radius:6px;text-decoration:none;display:block;overflow:hidden;transition:box-shadow 0.2s;}
+    .ke-card:hover{box-shadow:0 4px 16px rgba(50,61,65,0.12);}
+    .ke-card-dark{background:var(--navy);border-color:var(--navy);}
+    .ke-card-body{padding:1.25rem 1.5rem 1.5rem;}
+    .ke-label{font-family:var(--font-head);font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:var(--slate);margin-bottom:0.4rem;}
+    .ke-card-dark .ke-label{color:var(--amber);}
+    .ke-title{font-family:var(--font-head);font-size:1.05rem;font-weight:600;color:var(--navy);text-transform:uppercase;margin-bottom:0.5rem;}
+    .ke-card-dark .ke-title{color:var(--white);}
+    .ke-desc{font-size:0.83rem;color:var(--muted);line-height:1.6;margin:0;}
+    .ke-card-dark .ke-desc{color:rgba(255,255,255,0.65);}
+    .ke-arrow{margin-top:1rem;font-family:var(--font-head);font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--amber);}
+    .ke-icon{font-size:1.75rem;margin-bottom:0.75rem;display:block;}
+    .page-footer{background:#212b2e;color:rgba(255,255,255,0.45);text-align:center;font-size:0.78rem;padding:1.5rem 1rem;}
+    .page-footer strong{color:rgba(255,255,255,0.8);} .page-footer a{color:var(--amber);text-decoration:none;}
+    @media(max-width:768px){
+      .main-wrapper{grid-template-columns:1fr;} .sidebar{position:static;} .wine-list{grid-template-columns:1fr;}
+      .gallery{grid-template-columns:repeat(2,1fr);} .quick-bar-inner{flex-direction:column;padding:0.75rem 2rem;}
+      .quick-item{border-right:none;border-bottom:1px solid rgba(255,255,255,0.08);padding:0.6rem 0;margin:0;}
+      .quick-item:last-child{border-bottom:none;} .highlights{grid-template-columns:1fr 1fr;}
+    }
+  </style>
+  <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="icon-winery" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3h8l-1.5 7a4 4 0 0 1-5 0L8 3z"/><line x1="12" y1="14" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></symbol>
+    <symbol id="icon-distillery" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="7" ry="2"/><ellipse cx="12" cy="19" rx="7" ry="2"/><line x1="5" y1="5" x2="5" y2="19"/><line x1="19" y1="5" x2="19" y2="19"/><path d="M5 10c2-1.5 12-1.5 14 0"/><path d="M5 14c2 1.5 12 1.5 14 0"/></symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.22" y1="4.22" x2="7.05" y2="7.05"/><line x1="16.95" y1="16.95" x2="19.78" y2="19.78"/><line x1="2" y1="12" x2="6" y2="12"/><line x1="18" y1="12" x2="22" y2="12"/><line x1="4.22" y1="19.78" x2="7.05" y2="16.95"/><line x1="16.95" y1="7.05" x2="19.78" y2="4.22"/></symbol>
+    <symbol id="icon-dog" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6c0-1.7 1.3-3 3-3h2l1 2h1a1 1 0 0 1 1 1v2l-2 1v2"/><path d="M16 11c0 3-2 6-5 7H8a2 2 0 0 1-2-2v-2l-1-3 2-1 1 2h2l1-1"/><path d="M8 14v4"/><path d="M12 14v4"/></symbol>
+    <symbol id="icon-gift" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><rect x="4" y="12" width="16" height="9" rx="1"/><line x1="12" y1="8" x2="12" y2="21"/><path d="M12 8C12 8 9 5 9 3.5a3 3 0 0 1 3 2.5z"/><path d="M12 8C12 8 15 5 15 3.5a3 3 0 0 0-3 2.5z"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15.5,14"/></symbol>
+    <symbol id="icon-car" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11l1.5-4.5h11L19 11"/><rect x="3" y="11" width="18" height="7" rx="2"/><circle cx="7.5" cy="18" r="1.5" fill="#1e2729"/><circle cx="16.5" cy="18" r="1.5" fill="#1e2729"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2H7a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7A2 2 0 0 1 22 16.9z"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+    <symbol id="icon-map" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polygon points="3,6 9,3 15,6 21,3 21,18 15,21 9,18 3,21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" fill="#1e2729" stroke="none"/></symbol>
+    <symbol id="icon-pen" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.8 2.8 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></symbol>
+    <symbol id="icon-image" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21,15 16,10 5,21"/></symbol>
+    <symbol id="icon-repeat" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="17,1 21,5 17,9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7,23 3,19 7,15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></symbol>
+    <symbol id="icon-signature" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17c3-2 5-5 7-9s4-6 6-3-2 8-1 10 4-2 6-4"/><line x1="3" y1="21" x2="21" y2="21"/></symbol>
+    <symbol id="icon-hike" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="13" cy="4" r="2"/><path d="M10 7l-3 5h4l-2 6 5-3"/><path d="M14 16l2 5"/><path d="M9 12l-2 7"/></symbol>
+    <symbol id="icon-clipboard" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4a2 2 0 0 1 4 0"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></symbol>
+    <symbol id="icon-warning" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.3L2 20h20L13.7 3.3a2 2 0 0 0-3.4 0z"/><line x1="12" y1="10" x2="12" y2="14"/><circle cx="12" cy="17" r="0.5" fill="#1e2729"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="icon-bar" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-7 8-7-8z"/><line x1="12" y1="12" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></symbol>
+    <symbol id="icon-brewery" viewBox="0 0 24 24" fill="none" stroke="#1e2729" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="10" width="13" height="12" rx="1"/><path d="M15 12 Q21 12 21 16 Q21 20 15 20"/><circle cx="5" cy="10" r="2.2" fill="white" stroke="#1e2729" stroke-width="1.4"/><circle cx="9" cy="9" r="2.5" fill="white" stroke="#1e2729" stroke-width="1.4"/><circle cx="13" cy="10" r="2.2" fill="white" stroke="#1e2729" stroke-width="1.4"/></symbol>
+  </defs></svg>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="hero-content">
+      <div class="category-tag"><span class="ses-icon" style="width:22px;height:22px;background:rgba(50,61,65,0.18);"><svg style="width:13px;height:13px;"><use href="#icon-winery"/></svg></span>Winery &amp; Distillery · South East Seneca</div>
+      <h1>Idol Ridge Winery &amp; Alder Creek Distillery</h1>
+      <p class="hero-tagline">Lodge-style tasting room perched on a ridge with panoramic Seneca Lake views — 20+ wines, premium spirits, and homemade fudge.</p>
+    </div>
+  </div>
+
+  <div class="quick-bar"><div class="quick-bar-inner">
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span>Lodi, NY</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-clock"/></svg></span>Open Daily · 10 AM – 5 PM</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-car"/></svg></span><strong>~20 min</strong>&nbsp;from Watkins Glen</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-winery"/></svg></span>20+ Wines &amp; Spirits</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-music"/></svg></span>Live Music Sundays</div>
+    <div class="quick-item"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-dog"/></svg></span>Pet Friendly · Cabins Available</div>
+  </div></div>
+
+  <div class="main-wrapper">
+    <main>
+
+      <section id="about">
+        <p class="section-label">About</p>
+        <h2 class="section-title">Idol Ridge Winery &amp; Alder Creek Distillery</h2>
+        <p>Idol Ridge Winery is one of the most welcoming and visually stunning stops on the east shore of Seneca Lake — a lodge-style tasting room perched up on a ridge in Lodi with panoramic views of the lake stretching out below. Opened in November 2013 by the Martin family — owners of Montezuma Winery and Hidden Marsh Distillery in Seneca Falls — Idol Ridge brings the same warmth and creative spirit to the Finger Lakes wine trail that has defined the Martin brand for decades.</p>
+        <p>The wine program is extensive and adventurous — more than 20 different wines spanning dry to sweet, traditional vinifera, sparkling, fruit and honey wines under the Fossenvue brand, and the newer wild-fermented Local Culture series. Head Winemaker Phil Plummer and Assistant Winemaker Alex Bienvenue keep the cellar exciting, producing award winners like the WE 90-point Blanc de Noir and the Best in Sparkling Vinifera Sparkling Riesling String of Pearls alongside funky naturals like Pinot Noir Pét-Nat and Ramato.</p>
+        <p>Alder Creek Distillery runs alongside the winery, producing premium spirits including the signature Smoked Bourbon Whiskey and Best of Class Nashi Pear Brandy. The tasting room also features homemade fudge, local bites, a gift shop, and private Airbnb cabins for overnight stays on the ridge.</p>
+      </section>
+
+      <div class="story-section">
+        <p class="story-label"><span class="ses-icon" style="width:24px;height:24px;background:rgba(238,175,112,0.2);"><svg style="width:13px;height:13px;"><use href="#icon-pen" style="stroke:var(--amber)"/></svg></span>In Our Words</p>
+        <h3 class="story-title">Our Story</h3>
+        <div class="story-body">
+          <p>Pull up the driveway at Idol Ridge and you immediately understand why people keep coming back. The stone sign, the rolling green grounds, the lodge sitting up on the ridge — it all feels like arriving somewhere special. Open the door and the fireplace, the warm wood tones, and the smell of homemade fudge make it impossible not to settle in for a while.</p>
+          <p>The wine list is genuinely fun — there's something for everyone from dry Riesling to sparkling Saperavi to a Pét-Nat if you want to get adventurous. Add in the Alder Creek spirits tasting and you've got one of the most complete tasting experiences on the east shore. And on a Sunday afternoon with live music on the deck and Seneca Lake laid out in front of you, it's about as good as the Finger Lakes gets.</p>
+        </div>
+        <p class="story-attribution"><span class="ses-icon" style="width:22px;height:22px;background:rgba(238,175,112,0.15);"><svg style="width:12px;height:12px;"><use href="#icon-signature" style="stroke:var(--amber)"/></svg></span>— South East Seneca</p>
+      </div>
+
+      <section id="highlights">
+        <p class="section-label">Why Visit</p>
+        <h2 class="section-title">What to Expect</h2>
+        <div class="highlights">
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-sun"/></svg></span><h4>Panoramic Lake Views</h4><p>Lodge-style tasting room perched on a ridge with sweeping views of Seneca Lake from both the deck and interior.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><h4>20+ Award-Winning Wines</h4><p>Dry to sweet, sparkling, fruit and honey wines, and the adventurous Local Culture natural wine series.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-distillery"/></svg></span><h4>Alder Creek Spirits</h4><p>Smoked Bourbon Whiskey, Best of Class Nashi Pear Brandy, and more — all crafted on-site.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-music"/></svg></span><h4>Live Music Sundays</h4><p>Live music every Sunday 1:30–4:30 PM from Memorial Day through August — drinks, views, and great sound.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-gift"/></svg></span><h4>Homemade Fudge &amp; Gifts</h4><p>A gift shop stocked with wines, spirits, local bites, unique gifts, and freshly made fudge.</p></div>
+          <div class="highlight-card"><span class="ses-icon ses-icon-md"><svg><use href="#icon-dog"/></svg></span><h4>Pet Friendly + Cabins</h4><p>Dogs welcome on the grounds. Private Airbnb cabins available for overnight stays right on the ridge.</p></div>
+        </div>
+      </section>
+
+      <section id="wines">
+        <p class="section-label">The Lineup</p>
+        <h2 class="section-title">Wines &amp; Spirits</h2>
+        <p>One of the most diverse tasting menus on the east shore — flights available for wine, spirits, cocktails, and mimosas. Something for every palate.</p>
+        <ul class="wine-list">
+          <li><strong>Sparkling Riesling String of Pearls ★</strong><span>Best in Sparkling Vinifera 2022 — crisp, celebratory, and beautifully made</span></li>
+          <li><strong>Sparkling Saperavi ★</strong><span>One of the most unique sparkling wines in the Finger Lakes — bold, deep, and effervescent</span></li>
+          <li><strong>Blanc de Noir</strong><span>WE 90 points — elegant and expressive, made from red grapes</span></li>
+          <li><strong>Semi-Dry Riesling</strong><span>A crowd favorite — bright, fruit-forward, and approachable</span></li>
+          <li><strong>Local Culture Series</strong><span>Wild-fermented naturals including Pét-Nat and Ramato — for the adventurous palate</span></li>
+          <li><strong>Fossenvue Fruit &amp; Honey Wines</strong><span>Mead, fruit wines, and unique expressions from the Martin family tradition</span></li>
+          <li><strong>Smoked Bourbon Whiskey ★</strong><span>Alder Creek's signature spirit — rich, smoky, and distinctly Finger Lakes</span></li>
+          <li><strong>Nashi Pear Brandy ★</strong><span>Best of Class — a truly exceptional brandy made from locally grown pears</span></li>
+        </ul>
+        <p class="note-badge"><span class="ses-icon" style="width:20px;height:20px;background:rgba(238,175,112,0.3);"><svg style="width:11px;height:11px;"><use href="#icon-warning"/></svg></span>Full current wine and spirits list at mfwineriesdistilleries.com/wineries/idol-ridge</p>
+      </section>
+
+      <section id="gallery">
+        <p class="section-label">Gallery</p>
+        <h2 class="section-title">Photos</h2>
+        <div class="gallery">
+          <div class="gallery-item"><img src="Hero.jpeg" alt="Idol Ridge Winery and Alder Creek Distillery entrance" loading="lazy" style="object-position:center 60%;" /></div>
+          <div class="gallery-item"><img src="Hero.jpeg" alt="Idol Ridge lodge and grounds" loading="lazy" style="object-position:left center;" /></div>
+          <div class="gallery-item"><img src="Hero.jpeg" alt="Idol Ridge stone sign" loading="lazy" style="object-position:right center;" /></div>
+        </div>
+        <p class="gallery-note"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-image"/></svg></span>Photos · Idol Ridge Winery, Lodi NY</p>
+      </section>
+
+      <section id="tips">
+        <p class="section-label">Plan Your Visit</p>
+        <h2 class="section-title">Tips for Visitors</h2>
+        <ul class="tips-list">
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-winery"/></svg></span>Try the Sparkling Saperavi — it's one of the most unique sparkling wines you'll find anywhere on the Seneca Lake trail.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-distillery"/></svg></span>Add a spirits tasting — the Nashi Pear Brandy won Best of Class and it's genuinely exceptional.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-gift"/></svg></span>Don't leave without trying the homemade fudge — it's a signature of the Martin family tasting rooms.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-music"/></svg></span>Sunday live music runs 1:30–4:30 PM from Memorial Day through August — plan around it if you can.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-users"/></svg></span>Groups of 12 or more require a reservation — call (607) 582-7773 ahead of your visit.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-dog"/></svg></span>Dogs are welcome on the grounds — one of the more pet-friendly stops on the north end of the trail.</li>
+          <li><span class="ses-icon ses-icon-sm"><svg><use href="#icon-car"/></svg></span>Private Airbnb cabins are available for overnight stays — book through their website or Airbnb directly.</li>
+        </ul>
+      </section>
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-clipboard"/></svg></span>Plan Your Visit</div>
+        <div class="sidebar-card-body">
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-pin"/></svg></span><div><span class="label">Address</span>9059 State Route 414<br/>Lodi, NY 14860</div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-phone"/></svg></span><div><span class="label">Phone</span><a href="tel:+16075827773">(607) 582-7773</a></div></div>
+          <div class="info-row"><span class="ses-icon ses-icon-sm"><svg><use href="#icon-globe"/></svg></span><div><span class="label">Website</span><a href="https://mfwineriesdistilleries.com/wineries/idol-ridge/" target="_blank" rel="noopener">mfwineriesdistilleries.com</a></div></div>
+          <hr class="divider"/>
+          <span class="hours-sub-head">Hours</span>
+          <table class="hours-table">
+            <tr><td>Daily</td><td>10:00 AM – 5:00 PM</td></tr>
+          </table>
+          <span class="hours-sub-head">Live Music</span>
+          <table class="hours-table">
+            <tr><td>Sunday</td><td>1:30 – 4:30 PM</td></tr>
+            <tr><td>Season</td><td>Mem. Day – Aug 30</td></tr>
+          </table>
+          <a class="cta-btn" href="https://maps.google.com/?q=9059+State+Route+414+Lodi+NY+14860" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;background:rgba(50,61,65,0.15);"><svg style="width:11px;height:11px;"><use href="#icon-map"/></svg></span>Get Directions</a>
+          <div class="social-links">
+            <a href="https://www.facebook.com/idolridgewinery/" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-facebook"/></svg></span>Facebook</a>
+            <a href="https://www.instagram.com/idolridgewinery/" target="_blank" rel="noopener"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-instagram"/></svg></span>Instagram</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-pin"/></svg></span>Location</div>
+        <div class="map-wrap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2947.5!2d-76.8745!3d42.5219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08b1234567890%3A0x1!2s9059+State+Route+414%2C+Lodi%2C+NY+14860!5e0!3m2!1sen!2sus!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Idol Ridge Winery map"></iframe></div>
+        <div class="map-note"><span class="ses-icon" style="width:20px;height:20px;"><svg style="width:11px;height:11px;"><use href="#icon-map"/></svg></span>Route 414, Lodi NY · ~20 min north of Watkins Glen</div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-header"><span class="ses-icon" style="width:22px;height:22px;"><svg style="width:12px;height:12px;"><use href="#icon-compass"/></svg></span>Nearby Attractions</div>
+        <div class="sidebar-card-body">
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Wagner Vineyards</strong><span>Just down Route 414 · Oldest winery in SES, iconic octagonal barn</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-winery"/></svg></span><div><strong>Hazlitt 1852 Vineyards</strong><span>Down Route 414 · Home of Red Cat, horseshoe bar, The Oasis</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-bar"/></svg></span><div><strong>Either Oar</strong><span>Nearby · Wine &amp; whiskey bar with Hook &amp; Sip happy hour</span></div></div>
+          <div class="nearby-item"><span class="ses-icon ses-icon-md"><svg><use href="#icon-hike"/></svg></span><div><strong>Lodi Point State Park</strong><span>~3.5 miles · Lakeside park with swimming, fishing, and picnic areas</span></div></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="events-strip">
+    <div class="events-inner">
+      <p class="section-label">What's On</p>
+      <h2 class="section-title">Events &amp; Experiences</h2>
+      <div class="events-grid">
+        <div class="event-card"><p class="event-date"><span class="ses-icon" style="width:18px;height:18px;"><svg style="width:10px;height:10px;"><use href="#icon-calendar"/></svg></span>Every Sunday · 1:30–4:30 PM</p><h4>Live Music on the Ridge</h4><p>Local and regional musicians every Sunday from Memorial Day weekend through August 30 — cold wine, great views, and live music on the Seneca Lake ridge.</p><span class="event-recurring"><span class="ses-icon" style="width:14px;height:14px;"><svg style="width:8px;height:8px;"><use href="#icon-repeat"/></svg></span>Weekly · Seasonal</span></div>
+        <div class="event-card"><p class="event-date"><span class="ses-icon" style="width:18px;height:18px;"><svg style="width:10px;height:10px;"><use href="#icon-calendar"/></svg></span>Daily</p><h4>Wine &amp; Spirit Flights</h4><p>Wine tastings (6 samples + featured Sip of the Month), spirit tastings (3 Alder Creek samples), and cocktail, mimosa, and wine flight options — all starting at $6–$10.</p><span class="event-recurring"><span class="ses-icon" style="width:14px;height:14px;"><svg style="width:8px;height:8px;"><use href="#icon-repeat"/></svg></span>Daily</span></div>
+        <div class="event-card"><p class="event-date"><span class="ses-icon" style="width:18px;height:18px;"><svg style="width:10px;height:10px;"><use href="#icon-calendar"/></svg></span>Year-Round</p><h4>Airbnb Cabin Stays</h4><p>Private cabins available for overnight guests right on the ridge — wake up to Seneca Lake views and a glass of wine waiting for you at the tasting room.</p><span class="event-recurring"><span class="ses-icon" style="width:14px;height:14px;"><svg style="width:8px;height:8px;"><use href="#icon-repeat"/></svg></span>Year-Round</span></div>
+        <div class="event-card"><p class="event-date"><span class="ses-icon" style="width:18px;height:18px;"><svg style="width:10px;height:10px;"><use href="#icon-calendar"/></svg></span>Year-Round</p><h4>New Releases &amp; Seasonal Wines</h4><p>Phil Plummer and the cellar team are always working on something new — follow on Facebook for the latest releases, seasonal specials, and tasting room updates.</p><span class="event-recurring"><span class="ses-icon" style="width:14px;height:14px;"><svg style="width:8px;height:8px;"><use href="#icon-repeat"/></svg></span>Seasonal</span></div>
+      </div>
+      <p class="events-more"><span class="ses-icon" style="width:18px;height:18px;"><svg style="width:10px;height:10px;"><use href="#icon-winery"/></svg></span>Full calendar at <a href="https://mfwineriesdistilleries.com/wineries/idol-ridge/" target="_blank">mfwineriesdistilleries.com</a></p>
+    </div>
+  </div>
+
+  <!-- KEEP EXPLORING -->
+  <div class="keep-exploring">
+    <div class="keep-exploring-inner">
+      <p class="section-label">Keep Exploring</p>
+      <h2 class="section-title">Your Next Stop</h2>
+      <p style="color:#3a4f54;font-size:0.95rem;margin:0.5rem 0 0;">More to discover just down Route 414 on Seneca Lake.</p>
+      <div class="keep-exploring-grid">
+
+        <a href="https://southeastseneca.github.io/Wagner-Valley-Brewing/" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="wagner.jpeg" alt="Wagner Vineyards" style="width:100%;height:100%;object-fit:cover;object-position:center 50%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Winery &amp; Brewery · Lodi, NY</div>
+            <div class="ke-title">Wagner Vineyards</div>
+            <p class="ke-desc">The oldest winery in South East Seneca — established 1979. Iconic octagonal tasting room, award-winning wines, Wagner Valley Brewing, and stunning lake views.</p>
+            <div class="ke-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <a href="https://southeastseneca.github.io/Hazlitt-1852-Vineyards/" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="hazlitt.jpeg" alt="Hazlitt 1852 Vineyards" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Winery · Hector, NY</div>
+            <div class="ke-title">Hazlitt 1852 Vineyards</div>
+            <p class="ke-desc">Home of the world-famous Red Cat. Six generations of family farming, the legendary horseshoe bar, fresh popcorn, and live music at The Oasis pavilion.</p>
+            <div class="ke-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <a href="https://southeastseneca.github.io/Either-Oar-Wine-Whiskey-Cheese-Bar/" target="_top" class="ke-card" style="padding:0;overflow:hidden;">
+          <div style="height:160px;overflow:hidden;"><img src="eithetoar.jpeg" alt="Either Oar Wine Whiskey Cheese Bar" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;" /></div>
+          <div class="ke-card-body">
+            <div class="ke-label">Wine &amp; Whiskey Bar · Hector, NY</div>
+            <div class="ke-title">Either Oar</div>
+            <p class="ke-desc">Wine &amp; cheese pairing flights, whiskey cocktails, Hook &amp; Sip happy hour Fridays, and Blind Tasting in the Vineyard — a fresh new concept from the Martin family.</p>
+            <div class="ke-arrow">Explore →</div>
+          </div>
+        </a>
+
+        <a href="https://southeastseneca.com" target="_top" class="ke-card ke-card-dark">
+          <div class="ke-card-body" style="padding-top:1.75rem;">
+            <span class="ke-icon">🗺️</span>
+            <div class="ke-label">Full Directory</div>
+            <div class="ke-title">South East Seneca</div>
+            <p class="ke-desc">Wineries, breweries, distilleries, restaurants, and experiences across the east shore of Seneca Lake — all in one place.</p>
+            <div class="ke-arrow">Visit southeastseneca.com →</div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <p><strong>Idol Ridge Winery &amp; Alder Creek Distillery</strong> &nbsp;·&nbsp; 9059 State Route 414, Lodi, NY 14860 &nbsp;·&nbsp; <a href="tel:+16075827773">(607) 582-7773</a> &nbsp;·&nbsp; Part of <a href="https://southeastseneca.com">South East Seneca</a></p>
+    <p style="margin-top:0.4rem;">© 2026 South East Seneca Lake Tourism. All rights reserved.</p>
+  </footer>
+  <script>function sendHeight(){var h=document.documentElement.scrollHeight||document.body.scrollHeight;window.parent.postMessage({iframeHeight:h},"*");}window.addEventListener("load",sendHeight);window.addEventListener("resize",sendHeight);setTimeout(sendHeight,500);setTimeout(sendHeight,1500);setTimeout(sendHeight,3000);</script>
+</body>
+</html>
